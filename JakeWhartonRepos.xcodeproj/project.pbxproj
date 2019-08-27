@@ -1,0 +1,850 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0E8F651E9E982EA4B1742AD0 /* Pods_JakeWhartonRepos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1559E49E693A7EED958D8DFB /* Pods_JakeWhartonRepos.framework */; };
+		392205B2D1BAF70C7C865753 /* Pods_JakeWhartonReposTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95255C0DEA6DBA34BF12D3C9 /* Pods_JakeWhartonReposTests.framework */; };
+		44F3C54423153C9A006FD608 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F3C54323153C9A006FD608 /* AppDelegate.swift */; };
+		44F3C54623153C9A006FD608 /* ReposListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F3C54523153C9A006FD608 /* ReposListViewController.swift */; };
+		44F3C54923153C9A006FD608 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44F3C54723153C9A006FD608 /* Main.storyboard */; };
+		44F3C54C23153C9A006FD608 /* JakeWhartonRepos.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 44F3C54A23153C9A006FD608 /* JakeWhartonRepos.xcdatamodeld */; };
+		44F3C54E23153C9B006FD608 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44F3C54D23153C9B006FD608 /* Assets.xcassets */; };
+		44F3C55123153C9B006FD608 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44F3C54F23153C9B006FD608 /* LaunchScreen.storyboard */; };
+		44F3C55C23153C9B006FD608 /* JakeWhartonReposTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F3C55B23153C9B006FD608 /* JakeWhartonReposTests.swift */; };
+		44F3C56723153C9B006FD608 /* JakeWhartonReposUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F3C56623153C9B006FD608 /* JakeWhartonReposUITests.swift */; };
+		44F3C57723153EAB006FD608 /* ReposCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F3C57523153EAB006FD608 /* ReposCell.swift */; };
+		44F3C57823153EAB006FD608 /* ReposCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44F3C57623153EAB006FD608 /* ReposCell.xib */; };
+		44F3C57E231553EB006FD608 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F3C57B231553EB006FD608 /* Constants.swift */; };
+		44F3C57F231553EB006FD608 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F3C57C231553EB006FD608 /* Utilities.swift */; };
+		44F3C580231553EB006FD608 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F3C57D231553EB006FD608 /* Extensions.swift */; };
+		44F3C58423155C59006FD608 /* NetworkHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F3C58223155C59006FD608 /* NetworkHelper.swift */; };
+		44F3C58523155C59006FD608 /* JakeWhartonReposService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F3C58323155C59006FD608 /* JakeWhartonReposService.swift */; };
+		44F3C58823155CEF006FD608 /* GeneralModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F3C58723155CEF006FD608 /* GeneralModel.swift */; };
+		44F3C58A23156171006FD608 /* ReposListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F3C58923156171006FD608 /* ReposListView.swift */; };
+		44F3C58C23156184006FD608 /* ReposListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F3C58B23156184006FD608 /* ReposListPresenter.swift */; };
+		44F3C58F23156357006FD608 /* ReposModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F3C58E23156357006FD608 /* ReposModel.swift */; };
+		44F3C59223157CC3006FD608 /* LoadingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F3C59023157CC3006FD608 /* LoadingCell.swift */; };
+		44F3C59323157CC3006FD608 /* LoadingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44F3C59123157CC3006FD608 /* LoadingCell.xib */; };
+		44F3C596231597E1006FD608 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F3C595231597E1006FD608 /* CoreDataManager.swift */; };
+		47F2F572831345B85995A811 /* Pods_JakeWhartonReposUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CECA3925B34406941434CD85 /* Pods_JakeWhartonReposUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		44F3C55823153C9B006FD608 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 44F3C53823153C9A006FD608 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 44F3C53F23153C9A006FD608;
+			remoteInfo = JakeWhartonRepos;
+		};
+		44F3C56323153C9B006FD608 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 44F3C53823153C9A006FD608 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 44F3C53F23153C9A006FD608;
+			remoteInfo = JakeWhartonRepos;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1559E49E693A7EED958D8DFB /* Pods_JakeWhartonRepos.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JakeWhartonRepos.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		44F3C54023153C9A006FD608 /* JakeWhartonRepos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JakeWhartonRepos.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		44F3C54323153C9A006FD608 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		44F3C54523153C9A006FD608 /* ReposListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReposListViewController.swift; sourceTree = "<group>"; };
+		44F3C54823153C9A006FD608 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		44F3C54B23153C9A006FD608 /* JakeWhartonRepos.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = JakeWhartonRepos.xcdatamodel; sourceTree = "<group>"; };
+		44F3C54D23153C9B006FD608 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		44F3C55023153C9B006FD608 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		44F3C55223153C9B006FD608 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		44F3C55723153C9B006FD608 /* JakeWhartonReposTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JakeWhartonReposTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		44F3C55B23153C9B006FD608 /* JakeWhartonReposTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JakeWhartonReposTests.swift; sourceTree = "<group>"; };
+		44F3C55D23153C9B006FD608 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		44F3C56223153C9B006FD608 /* JakeWhartonReposUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JakeWhartonReposUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		44F3C56623153C9B006FD608 /* JakeWhartonReposUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JakeWhartonReposUITests.swift; sourceTree = "<group>"; };
+		44F3C56823153C9B006FD608 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		44F3C57523153EAB006FD608 /* ReposCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReposCell.swift; sourceTree = "<group>"; };
+		44F3C57623153EAB006FD608 /* ReposCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReposCell.xib; sourceTree = "<group>"; };
+		44F3C57B231553EB006FD608 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		44F3C57C231553EB006FD608 /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		44F3C57D231553EB006FD608 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		44F3C58223155C59006FD608 /* NetworkHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkHelper.swift; sourceTree = "<group>"; };
+		44F3C58323155C59006FD608 /* JakeWhartonReposService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JakeWhartonReposService.swift; sourceTree = "<group>"; };
+		44F3C58723155CEF006FD608 /* GeneralModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneralModel.swift; sourceTree = "<group>"; };
+		44F3C58923156171006FD608 /* ReposListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReposListView.swift; sourceTree = "<group>"; };
+		44F3C58B23156184006FD608 /* ReposListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReposListPresenter.swift; sourceTree = "<group>"; };
+		44F3C58E23156357006FD608 /* ReposModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReposModel.swift; sourceTree = "<group>"; };
+		44F3C59023157CC3006FD608 /* LoadingCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingCell.swift; sourceTree = "<group>"; };
+		44F3C59123157CC3006FD608 /* LoadingCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoadingCell.xib; sourceTree = "<group>"; };
+		44F3C595231597E1006FD608 /* CoreDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		5D7D8ADECF1492AFE314A13E /* Pods-JakeWhartonReposTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JakeWhartonReposTests.release.xcconfig"; path = "Target Support Files/Pods-JakeWhartonReposTests/Pods-JakeWhartonReposTests.release.xcconfig"; sourceTree = "<group>"; };
+		6478892458B46F0AD4436E03 /* Pods-JakeWhartonReposUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JakeWhartonReposUITests.release.xcconfig"; path = "Target Support Files/Pods-JakeWhartonReposUITests/Pods-JakeWhartonReposUITests.release.xcconfig"; sourceTree = "<group>"; };
+		793F1DA7B25F8395E460B8FB /* Pods-JakeWhartonRepos.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JakeWhartonRepos.release.xcconfig"; path = "Target Support Files/Pods-JakeWhartonRepos/Pods-JakeWhartonRepos.release.xcconfig"; sourceTree = "<group>"; };
+		7B2F305283BE5A3CB7D670F7 /* Pods-JakeWhartonReposUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JakeWhartonReposUITests.debug.xcconfig"; path = "Target Support Files/Pods-JakeWhartonReposUITests/Pods-JakeWhartonReposUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		95255C0DEA6DBA34BF12D3C9 /* Pods_JakeWhartonReposTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JakeWhartonReposTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CECA3925B34406941434CD85 /* Pods_JakeWhartonReposUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JakeWhartonReposUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CFE3562DA0ECB0E157BB3020 /* Pods-JakeWhartonReposTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JakeWhartonReposTests.debug.xcconfig"; path = "Target Support Files/Pods-JakeWhartonReposTests/Pods-JakeWhartonReposTests.debug.xcconfig"; sourceTree = "<group>"; };
+		D96F0B65D403F10B694B43A9 /* Pods-JakeWhartonRepos.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JakeWhartonRepos.debug.xcconfig"; path = "Target Support Files/Pods-JakeWhartonRepos/Pods-JakeWhartonRepos.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		44F3C53D23153C9A006FD608 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0E8F651E9E982EA4B1742AD0 /* Pods_JakeWhartonRepos.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44F3C55423153C9B006FD608 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				392205B2D1BAF70C7C865753 /* Pods_JakeWhartonReposTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44F3C55F23153C9B006FD608 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				47F2F572831345B85995A811 /* Pods_JakeWhartonReposUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		44F3C53723153C9A006FD608 = {
+			isa = PBXGroup;
+			children = (
+				44F3C54223153C9A006FD608 /* JakeWhartonRepos */,
+				44F3C55A23153C9B006FD608 /* JakeWhartonReposTests */,
+				44F3C56523153C9B006FD608 /* JakeWhartonReposUITests */,
+				44F3C54123153C9A006FD608 /* Products */,
+				C8971203E06F63916450FAD5 /* Pods */,
+				A74E9DA2C01A5F23060E496D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		44F3C54123153C9A006FD608 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				44F3C54023153C9A006FD608 /* JakeWhartonRepos.app */,
+				44F3C55723153C9B006FD608 /* JakeWhartonReposTests.xctest */,
+				44F3C56223153C9B006FD608 /* JakeWhartonReposUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		44F3C54223153C9A006FD608 /* JakeWhartonRepos */ = {
+			isa = PBXGroup;
+			children = (
+				44F3C594231597C4006FD608 /* CoreData */,
+				44F3C58623155CD1006FD608 /* Model */,
+				44F3C58123155C4B006FD608 /* Network */,
+				44F3C57A231553D0006FD608 /* Utilities */,
+				44F3C579231552A4006FD608 /* ReposList */,
+				44F3C57423153E75006FD608 /* Cells */,
+				44F3C54323153C9A006FD608 /* AppDelegate.swift */,
+				44F3C54723153C9A006FD608 /* Main.storyboard */,
+				44F3C54D23153C9B006FD608 /* Assets.xcassets */,
+				44F3C54F23153C9B006FD608 /* LaunchScreen.storyboard */,
+				44F3C55223153C9B006FD608 /* Info.plist */,
+				44F3C54A23153C9A006FD608 /* JakeWhartonRepos.xcdatamodeld */,
+			);
+			path = JakeWhartonRepos;
+			sourceTree = "<group>";
+		};
+		44F3C55A23153C9B006FD608 /* JakeWhartonReposTests */ = {
+			isa = PBXGroup;
+			children = (
+				44F3C55B23153C9B006FD608 /* JakeWhartonReposTests.swift */,
+				44F3C55D23153C9B006FD608 /* Info.plist */,
+			);
+			path = JakeWhartonReposTests;
+			sourceTree = "<group>";
+		};
+		44F3C56523153C9B006FD608 /* JakeWhartonReposUITests */ = {
+			isa = PBXGroup;
+			children = (
+				44F3C56623153C9B006FD608 /* JakeWhartonReposUITests.swift */,
+				44F3C56823153C9B006FD608 /* Info.plist */,
+			);
+			path = JakeWhartonReposUITests;
+			sourceTree = "<group>";
+		};
+		44F3C57423153E75006FD608 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				44F3C59023157CC3006FD608 /* LoadingCell.swift */,
+				44F3C59123157CC3006FD608 /* LoadingCell.xib */,
+				44F3C57523153EAB006FD608 /* ReposCell.swift */,
+				44F3C57623153EAB006FD608 /* ReposCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		44F3C579231552A4006FD608 /* ReposList */ = {
+			isa = PBXGroup;
+			children = (
+				44F3C54523153C9A006FD608 /* ReposListViewController.swift */,
+				44F3C58923156171006FD608 /* ReposListView.swift */,
+				44F3C58B23156184006FD608 /* ReposListPresenter.swift */,
+			);
+			path = ReposList;
+			sourceTree = "<group>";
+		};
+		44F3C57A231553D0006FD608 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				44F3C57B231553EB006FD608 /* Constants.swift */,
+				44F3C57D231553EB006FD608 /* Extensions.swift */,
+				44F3C57C231553EB006FD608 /* Utilities.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		44F3C58123155C4B006FD608 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				44F3C58323155C59006FD608 /* JakeWhartonReposService.swift */,
+				44F3C58223155C59006FD608 /* NetworkHelper.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		44F3C58623155CD1006FD608 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				44F3C58723155CEF006FD608 /* GeneralModel.swift */,
+				44F3C58E23156357006FD608 /* ReposModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		44F3C594231597C4006FD608 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				44F3C595231597E1006FD608 /* CoreDataManager.swift */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		A74E9DA2C01A5F23060E496D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1559E49E693A7EED958D8DFB /* Pods_JakeWhartonRepos.framework */,
+				95255C0DEA6DBA34BF12D3C9 /* Pods_JakeWhartonReposTests.framework */,
+				CECA3925B34406941434CD85 /* Pods_JakeWhartonReposUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C8971203E06F63916450FAD5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D96F0B65D403F10B694B43A9 /* Pods-JakeWhartonRepos.debug.xcconfig */,
+				793F1DA7B25F8395E460B8FB /* Pods-JakeWhartonRepos.release.xcconfig */,
+				CFE3562DA0ECB0E157BB3020 /* Pods-JakeWhartonReposTests.debug.xcconfig */,
+				5D7D8ADECF1492AFE314A13E /* Pods-JakeWhartonReposTests.release.xcconfig */,
+				7B2F305283BE5A3CB7D670F7 /* Pods-JakeWhartonReposUITests.debug.xcconfig */,
+				6478892458B46F0AD4436E03 /* Pods-JakeWhartonReposUITests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		44F3C53F23153C9A006FD608 /* JakeWhartonRepos */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 44F3C56B23153C9B006FD608 /* Build configuration list for PBXNativeTarget "JakeWhartonRepos" */;
+			buildPhases = (
+				4166082C70814D3A95DA7724 /* [CP] Check Pods Manifest.lock */,
+				44F3C53C23153C9A006FD608 /* Sources */,
+				44F3C53D23153C9A006FD608 /* Frameworks */,
+				44F3C53E23153C9A006FD608 /* Resources */,
+				E56B0C96E087E63C86922941 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JakeWhartonRepos;
+			productName = JakeWhartonRepos;
+			productReference = 44F3C54023153C9A006FD608 /* JakeWhartonRepos.app */;
+			productType = "com.apple.product-type.application";
+		};
+		44F3C55623153C9B006FD608 /* JakeWhartonReposTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 44F3C56E23153C9B006FD608 /* Build configuration list for PBXNativeTarget "JakeWhartonReposTests" */;
+			buildPhases = (
+				F9D09C1E21B8C2FDEC6D8481 /* [CP] Check Pods Manifest.lock */,
+				44F3C55323153C9B006FD608 /* Sources */,
+				44F3C55423153C9B006FD608 /* Frameworks */,
+				44F3C55523153C9B006FD608 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				44F3C55923153C9B006FD608 /* PBXTargetDependency */,
+			);
+			name = JakeWhartonReposTests;
+			productName = JakeWhartonReposTests;
+			productReference = 44F3C55723153C9B006FD608 /* JakeWhartonReposTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		44F3C56123153C9B006FD608 /* JakeWhartonReposUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 44F3C57123153C9B006FD608 /* Build configuration list for PBXNativeTarget "JakeWhartonReposUITests" */;
+			buildPhases = (
+				DBA17B8A2208AC316DE6E480 /* [CP] Check Pods Manifest.lock */,
+				44F3C55E23153C9B006FD608 /* Sources */,
+				44F3C55F23153C9B006FD608 /* Frameworks */,
+				44F3C56023153C9B006FD608 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				44F3C56423153C9B006FD608 /* PBXTargetDependency */,
+			);
+			name = JakeWhartonReposUITests;
+			productName = JakeWhartonReposUITests;
+			productReference = 44F3C56223153C9B006FD608 /* JakeWhartonReposUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		44F3C53823153C9A006FD608 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1030;
+				LastUpgradeCheck = 1030;
+				ORGANIZATIONNAME = "Radwa Khaled";
+				TargetAttributes = {
+					44F3C53F23153C9A006FD608 = {
+						CreatedOnToolsVersion = 10.3;
+					};
+					44F3C55623153C9B006FD608 = {
+						CreatedOnToolsVersion = 10.3;
+						TestTargetID = 44F3C53F23153C9A006FD608;
+					};
+					44F3C56123153C9B006FD608 = {
+						CreatedOnToolsVersion = 10.3;
+						TestTargetID = 44F3C53F23153C9A006FD608;
+					};
+				};
+			};
+			buildConfigurationList = 44F3C53B23153C9A006FD608 /* Build configuration list for PBXProject "JakeWhartonRepos" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 44F3C53723153C9A006FD608;
+			productRefGroup = 44F3C54123153C9A006FD608 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				44F3C53F23153C9A006FD608 /* JakeWhartonRepos */,
+				44F3C55623153C9B006FD608 /* JakeWhartonReposTests */,
+				44F3C56123153C9B006FD608 /* JakeWhartonReposUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		44F3C53E23153C9A006FD608 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44F3C55123153C9B006FD608 /* LaunchScreen.storyboard in Resources */,
+				44F3C54E23153C9B006FD608 /* Assets.xcassets in Resources */,
+				44F3C54923153C9A006FD608 /* Main.storyboard in Resources */,
+				44F3C59323157CC3006FD608 /* LoadingCell.xib in Resources */,
+				44F3C57823153EAB006FD608 /* ReposCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44F3C55523153C9B006FD608 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44F3C56023153C9B006FD608 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4166082C70814D3A95DA7724 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-JakeWhartonRepos-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DBA17B8A2208AC316DE6E480 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-JakeWhartonReposUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E56B0C96E087E63C86922941 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-JakeWhartonRepos/Pods-JakeWhartonRepos-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-JakeWhartonRepos/Pods-JakeWhartonRepos-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-JakeWhartonRepos/Pods-JakeWhartonRepos-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F9D09C1E21B8C2FDEC6D8481 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-JakeWhartonReposTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		44F3C53C23153C9A006FD608 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44F3C58823155CEF006FD608 /* GeneralModel.swift in Sources */,
+				44F3C58423155C59006FD608 /* NetworkHelper.swift in Sources */,
+				44F3C57F231553EB006FD608 /* Utilities.swift in Sources */,
+				44F3C596231597E1006FD608 /* CoreDataManager.swift in Sources */,
+				44F3C57E231553EB006FD608 /* Constants.swift in Sources */,
+				44F3C59223157CC3006FD608 /* LoadingCell.swift in Sources */,
+				44F3C58C23156184006FD608 /* ReposListPresenter.swift in Sources */,
+				44F3C58523155C59006FD608 /* JakeWhartonReposService.swift in Sources */,
+				44F3C54C23153C9A006FD608 /* JakeWhartonRepos.xcdatamodeld in Sources */,
+				44F3C54623153C9A006FD608 /* ReposListViewController.swift in Sources */,
+				44F3C58A23156171006FD608 /* ReposListView.swift in Sources */,
+				44F3C54423153C9A006FD608 /* AppDelegate.swift in Sources */,
+				44F3C57723153EAB006FD608 /* ReposCell.swift in Sources */,
+				44F3C580231553EB006FD608 /* Extensions.swift in Sources */,
+				44F3C58F23156357006FD608 /* ReposModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44F3C55323153C9B006FD608 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44F3C55C23153C9B006FD608 /* JakeWhartonReposTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44F3C55E23153C9B006FD608 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44F3C56723153C9B006FD608 /* JakeWhartonReposUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		44F3C55923153C9B006FD608 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 44F3C53F23153C9A006FD608 /* JakeWhartonRepos */;
+			targetProxy = 44F3C55823153C9B006FD608 /* PBXContainerItemProxy */;
+		};
+		44F3C56423153C9B006FD608 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 44F3C53F23153C9A006FD608 /* JakeWhartonRepos */;
+			targetProxy = 44F3C56323153C9B006FD608 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		44F3C54723153C9A006FD608 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				44F3C54823153C9A006FD608 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		44F3C54F23153C9B006FD608 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				44F3C55023153C9B006FD608 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		44F3C56923153C9B006FD608 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		44F3C56A23153C9B006FD608 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		44F3C56C23153C9B006FD608 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D96F0B65D403F10B694B43A9 /* Pods-JakeWhartonRepos.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CC2DDPEACD;
+				INFOPLIST_FILE = JakeWhartonRepos/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.github.JakeWhartonRepos;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		44F3C56D23153C9B006FD608 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 793F1DA7B25F8395E460B8FB /* Pods-JakeWhartonRepos.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CC2DDPEACD;
+				INFOPLIST_FILE = JakeWhartonRepos/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.github.JakeWhartonRepos;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		44F3C56F23153C9B006FD608 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CFE3562DA0ECB0E157BB3020 /* Pods-JakeWhartonReposTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q6EKB3LKQX;
+				INFOPLIST_FILE = JakeWhartonReposTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.github.JakeWhartonReposTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JakeWhartonRepos.app/JakeWhartonRepos";
+			};
+			name = Debug;
+		};
+		44F3C57023153C9B006FD608 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5D7D8ADECF1492AFE314A13E /* Pods-JakeWhartonReposTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q6EKB3LKQX;
+				INFOPLIST_FILE = JakeWhartonReposTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.github.JakeWhartonReposTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JakeWhartonRepos.app/JakeWhartonRepos";
+			};
+			name = Release;
+		};
+		44F3C57223153C9B006FD608 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7B2F305283BE5A3CB7D670F7 /* Pods-JakeWhartonReposUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q6EKB3LKQX;
+				INFOPLIST_FILE = JakeWhartonReposUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.github.JakeWhartonReposUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = JakeWhartonRepos;
+			};
+			name = Debug;
+		};
+		44F3C57323153C9B006FD608 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6478892458B46F0AD4436E03 /* Pods-JakeWhartonReposUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q6EKB3LKQX;
+				INFOPLIST_FILE = JakeWhartonReposUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.github.JakeWhartonReposUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = JakeWhartonRepos;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		44F3C53B23153C9A006FD608 /* Build configuration list for PBXProject "JakeWhartonRepos" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				44F3C56923153C9B006FD608 /* Debug */,
+				44F3C56A23153C9B006FD608 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		44F3C56B23153C9B006FD608 /* Build configuration list for PBXNativeTarget "JakeWhartonRepos" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				44F3C56C23153C9B006FD608 /* Debug */,
+				44F3C56D23153C9B006FD608 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		44F3C56E23153C9B006FD608 /* Build configuration list for PBXNativeTarget "JakeWhartonReposTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				44F3C56F23153C9B006FD608 /* Debug */,
+				44F3C57023153C9B006FD608 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		44F3C57123153C9B006FD608 /* Build configuration list for PBXNativeTarget "JakeWhartonReposUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				44F3C57223153C9B006FD608 /* Debug */,
+				44F3C57323153C9B006FD608 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		44F3C54A23153C9A006FD608 /* JakeWhartonRepos.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				44F3C54B23153C9A006FD608 /* JakeWhartonRepos.xcdatamodel */,
+			);
+			currentVersion = 44F3C54B23153C9A006FD608 /* JakeWhartonRepos.xcdatamodel */;
+			path = JakeWhartonRepos.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 44F3C53823153C9A006FD608 /* Project object */;
+}

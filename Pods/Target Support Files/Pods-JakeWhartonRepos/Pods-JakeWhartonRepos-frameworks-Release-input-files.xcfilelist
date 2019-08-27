@@ -1,0 +1,5 @@
+${PODS_ROOT}/Target Support Files/Pods-JakeWhartonRepos/Pods-JakeWhartonRepos-frameworks.sh
+${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework
+${BUILT_PRODUCTS_DIR}/EFInternetIndicator/EFInternetIndicator.framework
+${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework
+${BUILT_PRODUCTS_DIR}/SwiftMessages/SwiftMessages.framework
