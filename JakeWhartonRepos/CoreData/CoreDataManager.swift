@@ -56,7 +56,7 @@ class CoreDataManager {
         let repos = NSManagedObject(entity: entity, insertInto: managedContext)
         
         if idExists(id: repo.id, managedObject:managedContext) == false {
-            
+        
             repos.setValue(repo.id, forKeyPath: "id")
             repos.setValue(repo.name, forKeyPath: "name")
             repos.setValue(repo.repoDescription, forKeyPath: "repoDescription")

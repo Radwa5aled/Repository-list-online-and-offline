@@ -55,9 +55,11 @@ class ReposListViewController: UIViewController {
 
     @objc func refreshTable(refreshControl: UIRefreshControl) {
         
+        
         page = 1
         self.fetchingMore = false
         reposListPresenter.getReposData(page: page, pageSize: pageSize)
+        
         
     }
     
@@ -167,6 +169,9 @@ extension ReposListViewController: ReposListView {
     
     func noInternet(error: String) {
         
+        refreshControl.endRefreshing()
+        MBProgressHUD.hide(for: self.view, animated: true)
+        
         reposListPresenter.fetchReposOfflineData()
     }
     
@@ -178,7 +183,9 @@ extension ReposListViewController: ReposListView {
             self.reposArr = model
             
             //offline save
-            reposListPresenter.saveReposOfflineData(model: model)
+            if model.count != 0 {
+                reposListPresenter.saveReposOfflineData(model: model)
+            }
             
         } else {
             
@@ -186,7 +193,9 @@ extension ReposListViewController: ReposListView {
             self.reposArr.append(contentsOf: model)
             
             //offline append
-            reposListPresenter.saveReposOfflineData(model: model)
+            if model.count != 0 {
+                reposListPresenter.saveReposOfflineData(model: model)
+            }
         }
         
         tableView.reloadData()
@@ -199,10 +208,14 @@ extension ReposListViewController: ReposListView {
     
     func fetchReposOfflineData(model: [Repositories]) {
         
-        MBProgressHUD.hide(for: self.view, animated: true)
-        self.offlineMode = true
-        self.offlineReposArr = model
-        self.tableView.reloadData()
+        if model.count == 0 {
+             Utilities.shared.showAlertMessage(title: "No Internet Conection!", Message: "")
+        }else {
+            self.offlineMode = true
+            self.offlineReposArr = model
+            self.tableView.reloadData()
+        }
+       
         
     }
     
